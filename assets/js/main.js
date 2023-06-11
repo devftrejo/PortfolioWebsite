@@ -312,26 +312,64 @@
   };
 
   // AnimeJS:
+  const mediaQueryBrowser = window.matchMedia("(min-width: 1024px)");
 
-  anime({
-    targets: ".twitter, .instagram, .github",
-    scale: {
-      value: 1.2,
-      duration: 500,
-      delay: 500,
-      easing: "easeInOutQuart",
-    },
-  });
+  function findMQAndRunAnime(mediaQueryBrowser) {
+    if (mediaQueryBrowser.matches) {
+      let socialLinks = document.getElementById("social-links-anime");
+      socialLinks.style.position = "absolute";
+      socialLinks.style.right = "100%";
+      anime({
+        targets: ".github",
+        translateX: [0, 510],
+        delay: 0,
+      });
+      anime({
+        targets: ".linkedin",
+        translateX: [0, 510],
+        delay: 500,
+      });
+      anime({
+        targets: ".instagram",
+        translateX: [0, 510],
+        delay: 1000,
+      });
+      anime({
+        targets: ".facebook",
+        translateX: [0, 510],
+        delay: 1500,
+      });
+      anime({
+        targets: ".twitter",
+        translateX: [0, 510],
+        delay: 2000,
+      });
+    } else {
+      anime({
+        targets: ".twitter, .instagram, .github",
+        scale: {
+          value: 1.2,
+          duration: 500,
+          delay: 500,
+          easing: "easeInOutQuart",
+        },
+      });
 
-  anime({
-    targets: ".facebook, .linkedin",
-    translateY: [0, 70],
-    easing: "easeInOutSine",
-    scale: {
-      value: 1.2,
-      duration: 500,
-      delay: 100,
-      easing: "easeInOutQuart",
-    },
-  });
+      anime({
+        targets: ".facebook, .linkedin",
+        translateY: [0, 70],
+        easing: "easeInOutSine",
+        scale: {
+          value: 1.2,
+          duration: 500,
+          delay: 100,
+          easing: "easeInOutQuart",
+        },
+      });
+    }
+  }
+
+  findMQAndRunAnime(mediaQueryBrowser);
+
+  mediaQueryBrowser.addListener(findMQAndRunAnime);
 })();
