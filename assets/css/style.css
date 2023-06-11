@@ -1108,6 +1108,10 @@ section .container {
   border: 2px solid var(--cyan);
 }
 
+.resume button:hover {
+  background: var(--dodgerblue);
+}
+
 /*--------------------------------------------------------------
   Services:
 --------------------------------------------------------------*/
