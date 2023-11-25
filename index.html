@@ -95,7 +95,7 @@
             href=""
             class="typewrite"
             data-period="2000"
-            data-type='[ " JavaScript Dev", " Student", " Web Dev Ambassador", " Founder & CEO of ${DarkMode} Devs" ]'
+            data-type='[ " Founder & CEO of ${DarkMode} Devs", " Full Stack Developer", " Web Developer Ambassador", " Student" ]'
             ><span class="wrap"></span
           ></a>
           from Arizona
@@ -157,7 +157,7 @@
       <!-- ======= Container End ======= -->
 
       <div class="phone-image flex-item-right">
-        <img src="assets/img/phone.svg" alt="image of phone with code" />
+        <img src="assets/img/phone.svg" alt="Image of Phone with Code" />
       </div>
     </header>
 
@@ -176,20 +176,23 @@
 
         <div class="row">
           <div class="col-lg-4" data-aos="fade-right">
-            <img
-              src="assets/img/NaNProfessional.jpg"
-              class="img-fluid"
-              alt=""
-            />
+            <div id="personal-image">
+              <img
+                src="assets/img/NaNProfessional.jpg"
+                class="img-fluid"
+                alt="Image of a Professional Man"
+              />
+            </div>
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
             <h3>Full Stack <span>JavaScript</span> Developer</h3>
             <p class="fst-italic">
-              A word that best describes me - "AMBITIOUS". I am a JavaScript
-              Dev, a student at the University of Advancing Technology (UAT), a
-              Nucamp Coding Bootcamp Ambassador & Web Dev, and the Founder & CEO
-              of ${DarkMode} Devs. I am very passionate about software
-              engineering and would love to work with you, please get in touch.
+              A word that best describes me - "AMBITIOUS". I am the Founder &
+              CEO of ${DarkMode} Devs, a Full Stack Developer, a Nucamp Coding
+              Bootcamp Ambassador & Web Developer, and a student at the
+              University of Advancing Technology (UAT). I am very passionate
+              about software engineering and would love to work with you, please
+              get in touch.
             </p>
             <div class="row">
               <div class="col-lg-6">
@@ -1029,15 +1032,38 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
               <img
-                src="assets/img/portfolio/ladyBot.jpg"
+                src="assets/img/portfolio/LadyBot1.0.jpg"
                 class="img-fluid"
                 alt="Female AI Robot Image"
               />
               <div class="portfolio-info">
-                <h4>LadyBot (University of Advancing Technology)</h4>
+                <h4>LadyBot 1.0 (University of Advancing Technology)</h4>
                 <p>AI Chatbot (C++)</p>
                 <div class="portfolio-links">
-                  <a href="https://github.com/devftrejo/Ladybot" target="_blank"
+                  <a
+                    href="https://github.com/devftrejo/LadyBot1.0"
+                    target="_blank"
+                    ><i class="bx bx-link"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img
+                src="assets/img/portfolio/LadyBot2.0.jpg"
+                class="img-fluid"
+                alt="Female AI Robot Image"
+              />
+              <div class="portfolio-info">
+                <h4>LadyBot 2.0 (University of Advancing Technology)</h4>
+                <p>AI Chatbot (Python)</p>
+                <div class="portfolio-links">
+                  <a
+                    href="https://github.com/devftrejo/Ladybot2.0"
+                    target="_blank"
                     ><i class="bx bx-link"></i
                   ></a>
                 </div>
@@ -1128,15 +1154,17 @@
           </div>
         </div>
 
-        <!-- Google Calendar Appointment Scheduling begin -->
-        <iframe
-          src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1HRcyJMt38ZnNxNnUeMigO5aZH9dsZ2LGg27nzydLQLcBA0lmPnqdfKsmRqiCUWq6pP_phikmQ?gv=true"
-          style="border: 0"
-          width="100%"
-          height="600"
-          frameborder="0"
-        ></iframe>
-        <!-- end Google Calendar Appointment Scheduling -->
+        <div class="container" id="calendar-container">
+          <!-- Google Calendar Appointment Scheduling begin -->
+          <iframe
+            src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1HRcyJMt38ZnNxNnUeMigO5aZH9dsZ2LGg27nzydLQLcBA0lmPnqdfKsmRqiCUWq6pP_phikmQ?gv=true"
+            style="border: 0"
+            width="100%"
+            height="600"
+            frameborder="0"
+          ></iframe>
+          <!-- end Google Calendar Appointment Scheduling -->
+        </div>
 
         <form
           action="https://formsubmit.co/devftrejo@gmail.com"
@@ -1184,13 +1212,6 @@
               placeholder="Message"
               required
             ></textarea>
-          </div>
-          <div class="my-3">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">
-              Your message has been sent - Thank you!
-            </div>
           </div>
           <div class="text-center">
             <button class="button-3d" type="submit">Send</button>
