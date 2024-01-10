@@ -316,5 +316,5 @@
 
   findMQAndRunAnime(mediaQueryBrowser);
 
-  mediaQueryBrowser.addListener(findMQAndRunAnime);
+  mediaQueryBrowser.addEventListener(findMQAndRunAnime);
 })();
