@@ -1,7 +1,7 @@
 {
   "name": "portfoliowebsite",
-  "version": "1.0.0",
-  "description": "Git and NPM",
+  "version": "2.0.0",
+  "description": "Fernando Trejo's Professional Portfolio Website",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

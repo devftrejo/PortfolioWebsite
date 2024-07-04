@@ -4,6 +4,7 @@
   /**
    * Easy selector helper function
    */
+
   const select = (el, all = false) => {
     el = el.trim();
     if (all) {
@@ -16,6 +17,7 @@
   /**
    * Easy event listener function
    */
+
   const on = (type, el, listener, all = false) => {
     let selectEl = select(el, all);
 
@@ -31,6 +33,7 @@
   /**
    * Scrolls to an element with header offset
    */
+
   const scrollto = (el) => {
     window.scrollTo({
       top: 0,
@@ -41,6 +44,7 @@
   /**
    * Mobile nav toggle
    */
+
   on("click", ".mobile-nav-toggle", function (e) {
     select("#navbar").classList.toggle("navbar-mobile");
     this.classList.toggle("bi-list");
@@ -50,6 +54,7 @@
   /**
    * Scroll with offset on links with a class name .scrollto
    */
+
   on(
     "click",
     "#navbar .nav-link",
@@ -108,6 +113,7 @@
   /**
    * Activate/show sections on load with hash links
    */
+
   window.addEventListener("load", () => {
     if (window.location.hash) {
       let initial_nav = select(window.location.hash);
@@ -138,6 +144,7 @@
   /**
    * Skills animation
    */
+
   let skilsContent = select(".skills-content");
   if (skilsContent) {
     new Waypoint({
@@ -155,6 +162,7 @@
   /**
    * Portfolio isotope and filter
    */
+
   window.addEventListener("load", () => {
     let portfolioContainer = select(".portfolio-container");
     if (portfolioContainer) {
@@ -187,6 +195,7 @@
   /**
    * Initiate portfolio lightbox
    */
+
   const portfolioLightbox = GLightbox({
     selector: ".portfolio-lightbox",
   });
@@ -194,6 +203,7 @@
   /**
    * Initiate Pure Counter
    */
+
   new PureCounter();
 
   // Typewriter Animation:
@@ -249,7 +259,9 @@
         new TxtType(elements[i], JSON.parse(toRotate), period);
       }
     }
+
     // INJECT CSS
+
     var css = document.createElement("style");
     css.type = "text/css";
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
@@ -257,6 +269,7 @@
   };
 
   // AnimeJS:
+
   const mediaQueryBrowser = window.matchMedia("(min-width: 1024px)");
 
   function findMQAndRunAnime(mediaQueryBrowser) {
@@ -316,5 +329,5 @@
 
   findMQAndRunAnime(mediaQueryBrowser);
 
-  mediaQueryBrowser.addEventListener(findMQAndRunAnime);
+  mediaQueryBrowser.addEventListener("change", findMQAndRunAnime);
 })();

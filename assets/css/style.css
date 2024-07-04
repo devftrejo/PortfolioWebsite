@@ -10,9 +10,7 @@
   --dodgerblue: dodgerblue;
   --yellow: yellow;
   --cyan: cyan;
-  --lightgray: lightgray;
   --gray: gray;
-  --red: red;
   --aqua: aqua;
   --dark: #040303;
   --shade-one: #121212;
@@ -21,6 +19,7 @@
 /*--------------------------------------------------------------
   General:
 --------------------------------------------------------------*/
+
 body {
   font-family: var(--font-family-two);
   background-color: var(--black);
@@ -170,6 +169,7 @@ h3 span {
 }
 
 /* Header Top */
+
 #header.header-top {
   height: 80px;
   position: fixed;
@@ -613,9 +613,11 @@ h3 span {
 /*--------------------------------------------------------------
   Navbar:
 --------------------------------------------------------------*/
+
 /**
 * Desktop/Laptop Navbar:
 */
+
 .navbar {
   padding: 0;
   margin-top: 35px;
@@ -688,6 +690,7 @@ h3 span {
 /**
 * Mobile/Tablet Navbar:
 */
+
 .mobile-nav-toggle {
   color: var(--white);
   font-size: 28px;
@@ -759,6 +762,7 @@ h3 span {
 /*--------------------------------------------------------------
   Sections General:
 --------------------------------------------------------------*/
+
 section {
   overflow: hidden;
   position: absolute;
@@ -796,7 +800,6 @@ section .container {
   font-size: 14px;
   font-weight: 500;
   padding: 0;
-  line-height: 1px;
   margin: 0 0 20px 0;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -826,6 +829,7 @@ section .container {
 /*--------------------------------------------------------------
   About:
 --------------------------------------------------------------*/
+
 .about-me .content h3 {
   font-weight: 700;
   font-size: 26px;
@@ -879,6 +883,7 @@ section .container {
 /*--------------------------------------------------------------
   Counts:
 --------------------------------------------------------------*/
+
 .counts {
   padding: 70px 0 60px;
 }
@@ -921,6 +926,7 @@ section .container {
 /*--------------------------------------------------------------
   Skills:
 --------------------------------------------------------------*/
+
 .skills .progress {
   height: 60px;
   display: block;
@@ -957,6 +963,7 @@ section .container {
 /*--------------------------------------------------------------
   Interests:
 --------------------------------------------------------------*/
+
 .interests .icon-box {
   display: flex;
   align-items: center;
@@ -987,6 +994,7 @@ section .container {
 /*--------------------------------------------------------------
   Resume:
 --------------------------------------------------------------*/
+
 .resume .resume-title {
   font-size: 26px;
   font-weight: 700;
@@ -1050,88 +1058,67 @@ section .container {
 }
 
 /*--------------------------------------------------------------
-  Services:
+  Education:
 --------------------------------------------------------------*/
-.services .icon-box {
-  text-align: center;
-  background: rgba(204, 204, 204, 0.1);
-  padding: 80px 20px;
-  transition: all ease-in-out 0.3s;
-}
 
-.services .icon-box .icon {
-  margin: 0 auto;
-  width: 64px;
-  height: 64px;
-  background: var(--cyan);
-  border-radius: 5px;
-  transition: all 0.3s ease-out 0s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-  transform-style: preserve-3d;
-}
-
-.services .icon-box .icon i {
-  color: var(--gray);
-  font-size: 28px;
-}
-
-.services .icon-box .icon::before {
-  position: absolute;
-  content: "";
-  left: -8px;
-  top: -8px;
-  height: 100%;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.15);
-  border-radius: 5px;
-  transition: all 0.3s ease-out 0s;
-  transform: translateZ(-1px);
-}
-
-.services .icon-box h4 {
+.educational-objectives .content h3 {
   font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 24px;
+  font-size: 26px;
+  color: var(--dodgerblue);
 }
 
-.services .icon-box h4 a {
-  color: var(--white);
+.educational-objectives .content ul {
+  list-style: none;
+  padding: 0;
 }
 
-.services .icon-box p {
-  line-height: 24px;
-  font-size: 14px;
-  margin-bottom: 0;
+.educational-objectives .content ul li {
+  margin-bottom: 20px;
+  display: flex;
 }
 
-.services .icon-box:hover {
-  background: var(--gray);
-  border-color: var(--gray);
-}
-
-.services .icon-box:hover .icon {
-  background: var(--white);
-}
-
-.services .icon-box:hover .icon i {
+.educational-objectives .content ul strong {
+  margin-right: 10px;
   color: var(--cyan);
 }
 
-.services .icon-box:hover .icon::before {
-  background: var(--cyan);
+.educational-objectives .content ul i {
+  font-size: 16px;
+  margin-right: 5px;
+  color: var(--cyan);
+  line-height: 0;
 }
 
-.services .icon-box:hover h4 a,
-.services .icon-box:hover p {
-  color: var(--white);
+.educational-objectives .content p:last-child {
+  margin-bottom: 0;
+}
+
+#second-row-margin {
+  margin-top: 30px;
+}
+
+#education-images {
+  max-width: 100%;
+  height: auto;
+  margin-top: 5px;
+}
+
+@media (max-width: 425px) {
+  #education-images {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  #education-images {
+    max-width: 100%;
+  }
 }
 
 /*--------------------------------------------------------------
   Portfolio:
 --------------------------------------------------------------*/
+
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
