@@ -193,11 +193,19 @@
   });
 
   /**
-   * Initiate portfolio lightbox
+   * Initiate glightbox (Portfolio Lightbox)
    */
 
   const portfolioLightbox = GLightbox({
     selector: ".portfolio-lightbox",
+  });
+
+  /**
+   * Initiate glightbox (Video Lightbox)
+   */
+
+  const glightbox = GLightbox({
+    selector: ".glightbox",
   });
 
   /**

@@ -1103,6 +1103,32 @@ section .container {
   margin-top: 5px;
 }
 
+.btn-watch-video {
+  font-size: 16px;
+  transition: 0.5s;
+  margin-top: 24px;
+  color: var(--white);
+  font-weight: 500;
+}
+
+.btn-watch-video i {
+  color: var(--white);
+  font-size: 32px;
+  transition: 0.3s;
+  line-height: 0;
+  margin-right: 8px;
+}
+
+.btn-watch-video:hover {
+  color: var(--cyan);
+  text-shadow: 0 0 10px var(--cyan);
+}
+
+.btn-watch-video:hover i {
+  color: var(--cyan);
+  text-shadow: 0 0 10px var(--cyan);
+}
+
 @media (max-width: 425px) {
   #education-images {
     max-width: 100%;
