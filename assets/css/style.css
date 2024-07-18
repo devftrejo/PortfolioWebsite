@@ -940,7 +940,7 @@ section .container {
   text-transform: uppercase;
   display: block;
   font-weight: 600;
-  font-family: var(--font-family-one);
+  font-family: var(--font-family-two);
   color: var(--white);
 }
 
@@ -1103,6 +1103,64 @@ section .container {
   margin-top: 5px;
 }
 
+@media (max-width: 425px) {
+  #education-images {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  #education-images {
+    max-width: 100%;
+  }
+}
+
+/*--------------------------------------------------------------
+  SIP:
+--------------------------------------------------------------*/
+
+.sip .content h3 {
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--dodgerblue);
+}
+
+.sip .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sip .content ul li {
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.sip .content ul strong {
+  margin-right: 10px;
+  color: var(--cyan);
+}
+
+.sip .content ul i {
+  font-size: 16px;
+  margin-right: 5px;
+  color: var(--cyan);
+  line-height: 0;
+}
+
+.sip .content p:last-child {
+  margin-bottom: 0;
+}
+
+#second-row-margin {
+  margin-top: 30px;
+}
+
+#sip-images {
+  max-width: 100%;
+  height: auto;
+  margin-top: 5px;
+}
+
 .btn-watch-video {
   font-size: 16px;
   transition: 0.5s;
@@ -1130,13 +1188,13 @@ section .container {
 }
 
 @media (max-width: 425px) {
-  #education-images {
+  #sip-images {
     max-width: 100%;
   }
 }
 
 @media (max-width: 768px) {
-  #education-images {
+  #sip-images {
     max-width: 100%;
   }
 }

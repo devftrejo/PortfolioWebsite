@@ -287,27 +287,27 @@
       socialLinks.style.right = "100%";
       anime({
         targets: ".github",
-        translateX: [0, 510],
+        translateX: [0, 575],
         delay: 0,
       });
       anime({
         targets: ".linkedin",
-        translateX: [0, 510],
+        translateX: [0, 575],
         delay: 500,
       });
       anime({
         targets: ".instagram",
-        translateX: [0, 510],
+        translateX: [0, 575],
         delay: 1000,
       });
       anime({
         targets: ".facebook",
-        translateX: [0, 510],
+        translateX: [0, 575],
         delay: 1500,
       });
       anime({
         targets: ".twitter",
-        translateX: [0, 510],
+        translateX: [0, 575],
         delay: 2000,
       });
     } else {
