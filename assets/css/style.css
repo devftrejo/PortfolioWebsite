@@ -1395,7 +1395,6 @@ section .container {
 
 .contact .info-box .social-links {
   margin: 5px 0 0 68px;
-  display: flex;
 }
 
 .contact .info-box .social-links a {
